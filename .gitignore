@@ -1,1 +1,13 @@
-gen_data.js
+# Fichiers contenant des informations sensibles
+.env
+
+# Fichier de dépendances
+pip-lock.txt
+
+# Fichiers de logs
+*.log
+
+# Fichiers temporaires
+*.tmp
+*.temp
+
