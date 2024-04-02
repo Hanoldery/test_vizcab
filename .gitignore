@@ -13,3 +13,6 @@ pip-lock.txt
 
 # Fichiers mac
 .DS_Store
+
+# Fichiers python cache
+__pycache__/
