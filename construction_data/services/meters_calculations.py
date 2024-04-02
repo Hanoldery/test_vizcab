@@ -1,4 +1,4 @@
-from construction_data.utils import find_object_by_id
+from construction_data.utils import find_object_by_id, get_batiment_zones
 
 
 def calculate_main_usage(loaded_data, zones):
