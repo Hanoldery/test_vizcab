@@ -5,7 +5,7 @@ class ConstructionElement:
         self.id = id
         self.nom = nom
         self.unite = unite
-        self.impactUnitaireRechauffementClimatique = (
+        self.impact_unitaire = (
             impactUnitaireRechauffementClimatique
         )
-        self.dureeVieTypique = dureeVieTypique
+        self.duree_vie_typique = dureeVieTypique

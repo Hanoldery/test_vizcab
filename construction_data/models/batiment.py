@@ -3,6 +3,6 @@ class Batiment:
         self.id = id
         self.nom = nom
         self.surface = surface
-        self.zoneIds = zoneIds
+        self.zone_ids = zoneIds
         self.usage = usage
-        self.periodeDeReference = periodeDeReference
+        self.periode_de_reference = periodeDeReference

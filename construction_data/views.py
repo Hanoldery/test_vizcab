@@ -80,7 +80,7 @@ class BatimentImpactCarboneView(APIView):
         total_impact_carbone = 0
 
         # Calcul d'impact sur chaque zone du bâtiment
-        for zone_id in batiment.zoneIds:
+        for zone_id in batiment.zone_ids:
             zone = find_object_by_id(loaded_data, "zones", zone_id)
 
             if zone is None:

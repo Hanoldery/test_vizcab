@@ -4,4 +4,4 @@ class Zone:
         self.nom = nom
         self.surface = surface
         self.usage = usage
-        self.constructionElements = constructionElements
+        self.construction_elements = constructionElements

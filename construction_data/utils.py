@@ -28,7 +28,7 @@ def get_batiment_zones(loaded_data, batiment):
     zones = []
 
     for zone in loaded_data["zones"]:
-        if zone.id in batiment.zoneIds:
+        if zone.id in batiment.zone_ids:
             zones.append(zone)
 
     return zones
