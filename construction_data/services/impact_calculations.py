@@ -107,7 +107,7 @@ def calculate_impact_for_zone(loaded_data, batiment, zone):
     return impact_carbone_zone
 
 
-def calculate_impact_for_building(loaded_data, batiment, zone):
+def calculate_impact_for_building(loaded_data, batiment):
         total_impact_carbone = 0
 
         # Calcul d'impact sur chaque zone du bâtiment
