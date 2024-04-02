@@ -36,7 +36,7 @@ Pour lancer l'application, assurez-vous d'avoir Docker installé sur votre syst�
 
 - `construction_project/` : Dossier de configuration du projet Django.
 - `construction_data/` : L'application Django principale (modèles, vues, urls, et scripts de chargement de données)
-  - `models/` : Définitions des modèles Django pour les entités du projet comme les bâtiments, zones, et éléments de construction. Ici j'ai utilisé des classes python qui n'hérite pas des modèles Django comme je n'ai pas utilisé de base de donnée.
+  - `models/` : Définitions des modèles Django pour les entités du projet comme les bâtiments, zones, et éléments de construction. Ici j'ai utilisé des classes python qui n'héritent pas des modèles Django comme je n'ai pas utilisé de base de donnée.
   - `views.py` : Vues qui implémentent la logique des fonctionnalités principales.
   - `urls.py` : Définition des routes URL de l'application.
   - `services/` : Contient la logique métier pour les calculs, séparée des vues pour une meilleure lisibilité.
