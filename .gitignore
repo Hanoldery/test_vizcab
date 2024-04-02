@@ -11,3 +11,5 @@ pip-lock.txt
 *.tmp
 *.temp
 
+# Fichiers mac
+.DS_Store
