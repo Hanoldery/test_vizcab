@@ -19,6 +19,8 @@ def find_object_by_id(loaded_data, object_name, object_id):
         if obj.id == object_id:
             return obj
 
+    return None
+
 
 def get_batiment_zones(loaded_data, batiment):
     """

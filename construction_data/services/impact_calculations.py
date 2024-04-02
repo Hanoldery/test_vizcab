@@ -105,3 +105,20 @@ def calculate_impact_for_zone(loaded_data, batiment, zone):
             batiment, produit, element["quantite"]
         )
     return impact_carbone_zone
+
+
+def calculate_impact_for_building(loaded_data, batiment, zone):
+        total_impact_carbone = 0
+
+        # Calcul d'impact sur chaque zone du bâtiment
+        for zone_id in batiment.zone_ids:
+            zone = find_object_by_id(loaded_data, "zones", zone_id)
+
+            if zone is None:
+                continue
+
+            total_impact_carbone += calculate_impact_for_zone(
+                loaded_data, batiment, zone
+            )
+
+        return total_impact_carbone

@@ -33,7 +33,8 @@ def dict_to_obj(object_class, key, value):
 
 def load_data():
     """
-    Charge et convertit les données du fichier JSON "usages.json" en instances de l'objet Usage.
+    Charge et convertit les données du fichier 
+    JSON "usages.json" en instances de l'objet Usage.
     """
 
     usages = [
