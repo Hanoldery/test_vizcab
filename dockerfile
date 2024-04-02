@@ -1,18 +1,18 @@
-# Utilise une image Python officielle comme parent
+# Get docker image of python 3.9
 FROM python:3.9
 
-# Définit le répertoire de travail dans le conteneur
+# Define working directory on docker container to /code
 WORKDIR /code
 
-# Copie les fichiers de requirements et installe les dépendances
+# Install Python packages
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copie le reste du code source de l'application dans le conteneur
+# Copy local folder to docker
 COPY . .
 
-# Expose le port sur lequel l'application va s'exécuter
+# Expose 8000 port externally
 EXPOSE 8000
 
-# Commande pour démarrer l'application Django avec Gunicorn (par exemple)
-CMD ["gunicorn", "-b", "0.0.0.0:8000", "mon_projet_django.wsgi:application"]
+# Use gunicorn on port 8000
+CMD ["gunicorn", "-b", "0.0.0.0:8000", "construction_project.wsgi:application"]
